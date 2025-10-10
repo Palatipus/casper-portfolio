@@ -1,0 +1,20 @@
+{
+  "name": "casper_portfolio_v3_blackgold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Palatipus/casper-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Palatipus/casper-portfolio/issues"
+  },
+  "homepage": "https://github.com/Palatipus/casper-portfolio#readme"
+}
