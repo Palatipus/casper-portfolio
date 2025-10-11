@@ -1,4 +1,3 @@
-console.log("✅ JS loaded successfully");
 document.addEventListener("DOMContentLoaded", () => {
   /* === THEME TOGGLE === */
   const themeBtn = document.getElementById("themeBtn");
@@ -22,24 +21,4 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.12 }
   );
   document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
-
-  /* === MOBILE MENU TOGGLE === */
-  const toggle = document.getElementById("menuToggle");
-  const nav = document.getElementById("navLinks");
-
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      console.log("☰ clicked!");
-      nav.classList.toggle("show");
-      toggle.classList.toggle("active"); // Add pulse animation
-    });
-
-    // Close menu when a link is clicked (for better UX on mobile)
-    nav.querySelectorAll("a").forEach(link =>
-      link.addEventListener("click", () => {
-        nav.classList.remove("show");
-        toggle.classList.remove("active");
-      })
-    );
-  }
 });

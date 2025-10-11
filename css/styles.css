@@ -73,6 +73,13 @@ header .site-nav {
   align-items: center;
 }
 
+/* ✅ On small screens, only show "About" and "Skills" */
+@media (max-width: 750px) {
+  .nav-links a:not([href="#about"]):not([href="#skills"]) {
+    display: none;
+  }
+}
+
 .nav-links a {
   color: var(--text);
   text-decoration: none;
@@ -223,78 +230,6 @@ h2, h3, h4 {
   color: var(--gold);
 }
 
-/* ===== MOBILE NAVIGATION ===== */
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: var(--gold);
-  user-select: none;
-}
-
-/* ===== FIXED MOBILE NAVIGATION ===== */
-@media (max-width: 750px) {
-  .nav-links {
-    position: fixed;               /* ✅ fixed instead of absolute */
-    top: 70px;
-    left: 0;
-    background: rgba(0, 0, 0, 0.96);
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
-    gap: 1.2rem;
-    padding: 1.5rem 0;
-    border-top: 1px solid rgba(255,215,0,0.2);
-    opacity: 0;
-    transform: translateY(-10px);
-    pointer-events: none;
-    transition: all 0.35s ease;
-    display: flex;
-    z-index: 9999;
-  }
-
-  .nav-links.show {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  .nav-links a {
-    color: var(--gold);
-    font-size: 1.1rem;
-    padding: 0.6rem 1rem;
-    display: block;
-    transition: color 0.3s ease;
-  }
-
-  .nav-links a:hover {
-    color: #fff;
-  }
-
-  .menu-toggle {
-    display: block;
-    z-index: 10000;
-    cursor: pointer;
-  }
-
-  .site-nav {
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .menu-toggle.active {
-    animation: pulse 0.6s ease;
-  }
-
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.15); }
-    100% { transform: scale(1); }
-  }
-}
-
-
 /* ===== SMALL SCREEN TWEAKS ===== */
 @media (max-width: 600px) {
   .container { padding: 1rem; }
@@ -327,6 +262,7 @@ h2, h3, h4 {
   .nav-links { flex-wrap: wrap; gap: 0.4rem; justify-content: flex-end; }
   .nav-links a { font-size: 0.95rem; padding: 0.35rem 0.6rem; }
 }
+
 /* ===== GENERAL RESPONSIVE IMPROVEMENTS ===== */
 img, video {
   max-width: 100%;
