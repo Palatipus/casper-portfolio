@@ -1,4 +1,4 @@
-<nav class="site-nav glass">
+<nav class="site-nav">
   <div class="brand">
     <a href="index.html" class="brand-link">
       <div class="brand-initial">CA</div>
@@ -8,7 +8,8 @@
       </div>
     </a>
   </div>
-  
+
+  <!-- Desktop nav -->
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
@@ -17,4 +18,26 @@
     <li><a href="contact.html">Contact</a></li>
     <li><a class="btn-outline" href="resume.pdf" download>Download CV</a></li>
   </ul>
+
+  <!-- Hamburger button (mobile) -->
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
+
+<!-- Mobile full-screen menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-accent"></div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="resume.pdf" download class="btn-mobile">Download CV</a></li>
+  </ul>
+</div>
+
+

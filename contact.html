@@ -5,52 +5,53 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Contact — Agyemang Casper</title>
   <meta property="og:title" content="Agyemang Casper Adu-Gyamfi | Computer Engineer">
-<meta property="og:description" content="Motivated Computer Engineering student at KNUST — projects in WiFi systems, embedded systems and full-stack web development.">
-<meta property="og:image" content="https://casper-portfolio.onrender.com/assets/preview.png">
-<meta property="og:url" content="https://casper-portfolio.onrender.com">
-<meta property="og:type" content="website">
-
+  <meta property="og:description" content="Motivated Computer Engineering student at KNUST — projects in WiFi systems, embedded systems and full-stack web development.">
+  <meta property="og:image" content="https://casper-portfolio.onrender.com/assets/preview.png">
+  <meta property="og:url" content="https://casper-portfolio.onrender.com">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
   <header></header>
   <main class="container">
-    <section class="glass contact-section">
-  <h2 style="padding: 10px;padding-bottom: 0; margin-bottom: 10px;">Contact</h2>
-  <p class="lead" style="padding-left: 10px;">I'm open to collaborations, internships and freelance work. Reach out and let's build something.</p>
-  <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-    <div class="contact-card glass" style="padding-left: 10px;margin-left: 10px;margin-bottom: 10px;">
-      <h4>Contact details</h4>
-      <p>Email: <a href="mailto:casperagyengo12@gmail.com" style="text-decoration: none; color: gold;">casperagyengo12@gmail.com</a></p>
-      <p>Phone: 0247743168</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/casperagyemang1" target="_blank" rel="noopener" style="text-decoration: none; color: gold;">https://www.linkedin.com/in/casperagyemang1</a></p>
-      <p>Telegram: <a href="https://t.me/caspa_palatipus" style="text-decoration: none; color: gold;">https://t.me/caspa_palatipus</a></p>
-    </div>
-    <div class="contact-card glass" style="padding-left: 10px;padding-right: 10px;margin-right: 10px;margin-bottom: 10px;">
-      <h4>Quick message</h4>
-      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-        <input type="hidden" name="form-id" value="Message from Portfolio Site">
-        <input type="hidden" name="access_key" value="b60fddda-e61e-41c0-8ee6-f772a76b0b6b">
-        <label for="name">Name</label>
-        <input id="name" name="name" required>
+    <section class="glass" style="padding:2rem;margin-top:2rem">
+      <div class="gold-line"></div>
+      <h2 style="margin-bottom:0.3rem">Contact</h2>
+      <p class="lead" style="margin-bottom:2rem">Open to collaborations, internships, and freelance work. Let's build something together.</p>
 
-        <label for="email2">Email</label>
-        <input id="email2" name="email" type="email" required>
+      <div class="contact-grid">
+        <div class="contact-card glass">
+          <div class="gold-line"></div>
+          <h4>Contact Details</h4>
+          <p style="font-size:0.88rem;color:#a8a090;margin-top:0.8rem;line-height:2">
+            Email: <a href="mailto:casperagyengo12@gmail.com" style="color:var(--gold);text-decoration:none">casperagyengo12@gmail.com</a><br>
+            Phone: <a href="tel:0247743168" style="color:var(--gold);text-decoration:none">0247743168</a><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/casperagyemang1" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none">casperagyemang1</a><br>
+            Telegram: <a href="https://t.me/caspa_palatipus" style="color:var(--gold);text-decoration:none">@caspa_palatipus</a>
+          </p>
+        </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <input type="hidden" name="redirect" value="https://casper-portfolio.onrender.com/thankyou.html">
-  <div style="margin-top:0.6rem;padding-left:5px;margin-bottom:10px;">
-    <button class="btn" type="submit">Send</button>
-  </div>
-</form>
-
-    </div>
-  </div>
-</section>
-
+        <div class="contact-card glass">
+          <div class="gold-line"></div>
+          <h4>Quick Message</h4>
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" style="margin-top:0.8rem">
+            <input type="hidden" name="form-id" value="Message from Portfolio Site">
+            <input type="hidden" name="access_key" value="b60fddda-e61e-41c0-8ee6-f772a76b0b6b">
+            <input type="hidden" name="redirect" value="https://casper-portfolio.onrender.com/thankyou.html">
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your name">
+            <label for="email2">Email</label>
+            <input id="email2" name="email" type="email" required placeholder="your@email.com">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="What's on your mind?"></textarea>
+            <div style="margin-top:0.5rem">
+              <button class="btn" type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
   <footer></footer>
   <script src="js/loader.js"></script>

@@ -5,47 +5,65 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Projects — Agyemang Casper</title>
   <meta property="og:title" content="Agyemang Casper Adu-Gyamfi | Computer Engineer">
-<meta property="og:description" content="Motivated Computer Engineering student at KNUST — projects in WiFi systems, embedded systems and full-stack web development.">
-<meta property="og:image" content="https://casper-portfolio.onrender.com/assets/preview.png">
-<meta property="og:url" content="https://casper-portfolio.onrender.com">
-<meta property="og:type" content="website">
-
+  <meta property="og:description" content="Motivated Computer Engineering student at KNUST — projects in WiFi systems, embedded systems and full-stack web development.">
+  <meta property="og:image" content="https://casper-portfolio.onrender.com/assets/preview.png">
+  <meta property="og:url" content="https://casper-portfolio.onrender.com">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
   <header></header>
   <main class="container">
-    <h2>Projects</h2>
+    <div style="margin-top:2rem;margin-bottom:1rem">
+      <div class="gold-line"></div>
+      <h2>Projects</h2>
+      <p class="lead" style="margin-top:0.3rem">A selection of work combining software, hardware, and real-world impact.</p>
+    </div>
+
     <div class="projects-grid">
-  <article class="project-card glass reveal">
-    <img src="assets/projects/flint.png" onclick="window.location.href='https://flintwifi.onrender.com'" alt="FLINT WiFi">
-    <div class="project-body">
-      <h3><a href="https://flintwifi.onrender.com" style="text-decoration: none;color: gold;">FLINT WiFi Voucher Website</a></h3>
-      <p>Designed and developed a website to automate sale and distribution of Wi-Fi vouchers for a local ISP. Integrated Paystack for secure payments, used Supabase for voucher storage, and implemented email delivery of vouchers. Built with Node.js, Nodemailer, and Supabase.</p>
-      <p><strong>Key features:</strong> Paystack payments, voucher generation, Supabase-backed storage, responsive UI, email delivery.</p>
+
+      <article class="project-card reveal">
+        <img src="assets/projects/fredmak.png" onclick="window.location.href='https://fredmakwifi.onrender.com/'" alt="Fredmak Internet Services" style="cursor:pointer;background:#0b0b0b">
+        <div class="project-body">
+          <span class="tag" style="margin-bottom:0.4rem">Node.js · Express · PostgreSQL · Paystack</span>
+          <h3><a href="https://fredmakwifi.onrender.com/" target="_blank" rel="noopener" style="text-decoration:none;color:var(--gold)">Fredmak Internet Services</a></h3>
+          <p>Full-stack internet service management platform for PKAY INTERNET SERVICES, serving a student hostel in Ghana. Handles end-to-end transaction flow from plan selection through payment to credential distribution with zero manual intervention.</p>
+          <p><strong style="color:var(--muted);font-size:0.8rem">Key features:</strong> Real-time payment verification · Automated credential delivery · Email automation · Mobile-responsive UI</p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <img src="assets/projects/flint.png" onclick="window.location.href='https://flintwifi.onrender.com'" alt="FLINT WiFi">
+        <div class="project-body">
+          <span class="tag" style="margin-bottom:0.4rem">Node.js · Supabase · Paystack</span>
+          <h3><a href="https://flintwifi.onrender.com" target="_blank" rel="noopener" style="text-decoration:none;color:var(--gold)">FLINT WiFi Voucher Website</a></h3>
+          <p>Designed and developed a website to automate sale and distribution of Wi-Fi vouchers for a local ISP. Integrated Paystack for secure payments, used Supabase for voucher storage, and implemented email delivery of vouchers via Nodemailer.</p>
+          <p><strong style="color:var(--muted);font-size:0.8rem">Key features:</strong> Paystack payments · Voucher generation · Email delivery · Responsive UI</p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <img src="assets/projects/serious.png" onclick="window.location.href='https://serious-gamers.onrender.com'" alt="Serious Gamers">
+        <div class="project-body">
+          <span class="tag" style="margin-bottom:0.4rem">Supabase · JavaScript</span>
+          <h3><a href="https://serious-gamers.onrender.com" target="_blank" rel="noopener" style="text-decoration:none;color:var(--gold)">Serious Gamers Tournament Website</a></h3>
+          <p>Tournament registration and bracket site with team registration, slot limits, and Supabase for data persistence. Responsive frontend with admin management features.</p>
+          <p><strong style="color:var(--muted);font-size:0.8rem">Key features:</strong> Team registration · Bracket display · Admin controls · Supabase integration</p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <img src="assets/projects/traffic.png" alt="Traffic Light">
+        <div class="project-body">
+          <span class="tag" style="margin-bottom:0.4rem">C/C++ · Arduino · Proteus</span>
+          <h3>Arduino Traffic Light Control System</h3>
+          <p>Embedded systems project using Arduino Uno to implement traffic-light cycles. Programmed timing logic in C/C++, simulated and tested with Proteus.</p>
+          <p><strong style="color:var(--muted);font-size:0.8rem">Key features:</strong> Hardware interfacing · Timing logic · Proteus simulation</p>
+        </div>
+      </article>
+
     </div>
-  </article>
-
-  <article class="project-card glass reveal">
-    <img src="assets/projects/serious.png" onclick="window.location.href='https://serious-gamers.onrender.com'" alt="Serious Gamers">
-    <div class="project-body">
-      <h3><a href="https://serious-gamers.onrender.com" style="text-decoration: none;color: gold;">Serious Gamers Tournament Website</a></h3>
-      <p>Tournament registration and bracket site with team registration, slot limits, and Supabase for data persistence. Responsive frontend with admin management features.</p>
-      <p><strong>Key features:</strong> Team registration, bracket display, admin controls, Supabase integration.</p>
-    </div>
-  </article>
-
-  <article class="project-card glass reveal">
-    <img src="assets/projects/traffic.png" alt="Traffic Light">
-    <div class="project-body">
-      <h3>Arduino Traffic Light Control System</h3>
-      <p>Embedded systems project using Arduino Uno to implement traffic-light cycles. Programmed timing logic in C/C++, simulated and tested with Proteus.</p>
-      <p><strong>Key features:</strong> Hardware interfacing, timing logic, Proteus simulation.</p>
-    </article>
-</div>
-
   </main>
   <footer></footer>
   <script src="js/loader.js"></script>
